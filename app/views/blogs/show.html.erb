@@ -6,5 +6,5 @@
   <%= link_to "Edit this blog", edit_blog_path(@blog) %> |
   <%= link_to "Back to blogs", blogs_path %>
 
-  <%= button_to "Delete this blog", @blog, method: :delete %>
+  <%= button_to "Delete this blog", @blog, method: :delete, form: { data: { turbo_confirm: 'Are you sure?' } } %>
 </div>
